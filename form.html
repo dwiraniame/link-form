@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="font-weight: bold;">Contact Form</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .form-container {
+            background-color: white;
+            border-radius: px;
+            padding: 30px;
+            width: 400px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            font-family: "Times New Roman", Times, serif;
+        }
+        
+        .form-title {
+            text-align: center;
+            color: #0066cc; /* Changed to blue */
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-family: "Times New Roman", Times, serif;
+            font-weight: bold;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: inline-block;
+            width: 100px;
+            font-size: 14px;
+            color: #333366;
+            font-family: "Times New Roman", Times, serif;
+        }
+        
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group select {
+            width: 70%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: "Times New Roman", Times, serif;
+        }
+        
+        .form-group input[type="radio"] {
+            margin-right: 5px;
+        }
+        
+        .radio-label {
+            margin-right: 10px;
+            font-size: 14px;
+            font-family: "Times New Roman", Times, serif;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(to right, #0066cc, #0099ff);
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 20px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto 0;
+            font-weight: bold;
+            font-family: "Times New Roman", Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-title">Contact Form</div>
+        
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name">
+            </div>
+            
+            <div class="form-group">
+                <label for="no_hp">No Hp/WA</label>
+                <input type="text" id="no_hp" name="no_hp">
+            </div>
+            
+            <div class="form-group">
+                <label>Jenis Kelamin</label>
+                <input type="radio" id="laki" name="gender">
+                <span class="radio-label">Laki-Laki</span>
+                <input type="radio" id="perempuan" name="gender">
+                <span class="radio-label">Perempuan</span>
+            </div>
+            
+            <div class="form-group">
+                <label for="pendidikan">Pendidikan</label>
+                <select id="pendidikan" name="pendidikan">
+                    <option value="SD">SD</option>
+                    <option value="SMP">SMP</option>
+                    <option value="SMA">SMA</option>
+                    <option value="S1">S1</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+            </div>
+            
+            <div class="form-group">
+                <label for="keperluan">Keperluan</label>
+                <input type="text" id="keperluan" name="keperluan">
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
